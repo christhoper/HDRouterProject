@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22FBD6B5A61E8D5CDD9FA815 /* Pods_HDRouterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDD47053E9F85A0CF37D593 /* Pods_HDRouterProject.framework */; };
 		FFD990E62B849B2D0075424F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD990E52B849B2D0075424F /* AppDelegate.swift */; };
 		FFD990E82B849B2D0075424F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD990E72B849B2D0075424F /* SceneDelegate.swift */; };
 		FFD990EA2B849B2D0075424F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD990E92B849B2D0075424F /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2360659F345E971EB479BE04 /* Pods-HDRouterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDRouterProject.debug.xcconfig"; path = "Target Support Files/Pods-HDRouterProject/Pods-HDRouterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4CDD47053E9F85A0CF37D593 /* Pods_HDRouterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDRouterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA88E8E1936C6E35E662E8D0 /* Pods-HDRouterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDRouterProject.release.xcconfig"; path = "Target Support Files/Pods-HDRouterProject/Pods-HDRouterProject.release.xcconfig"; sourceTree = "<group>"; };
 		FFD990E22B849B2D0075424F /* HDRouterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDRouterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD990E52B849B2D0075424F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD990E72B849B2D0075424F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FBD6B5A61E8D5CDD9FA815 /* Pods_HDRouterProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4608EB21E39B286ED744DC37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CDD47053E9F85A0CF37D593 /* Pods_HDRouterProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7B6EEDFBCDB32A2AA7E3F4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2360659F345E971EB479BE04 /* Pods-HDRouterProject.debug.xcconfig */,
+				FA88E8E1936C6E35E662E8D0 /* Pods-HDRouterProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FFD990D92B849B2D0075424F = {
 			isa = PBXGroup;
 			children = (
 				FFD990E42B849B2D0075424F /* HDRouterProject */,
 				FFD990E32B849B2D0075424F /* Products */,
+				E7B6EEDFBCDB32A2AA7E3F4B /* Pods */,
+				4608EB21E39B286ED744DC37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFD990F62B849B2F0075424F /* Build configuration list for PBXNativeTarget "HDRouterProject" */;
 			buildPhases = (
+				C08CBFB9D72F3DF60FABA1E2 /* [CP] Check Pods Manifest.lock */,
 				FFD990DE2B849B2D0075424F /* Sources */,
 				FFD990DF2B849B2D0075424F /* Frameworks */,
 				FFD990E02B849B2D0075424F /* Resources */,
+				31FD4C44F48024540A726298 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FD4C44F48024540A726298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HDRouterProject/Pods-HDRouterProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HDRouterProject/Pods-HDRouterProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HDRouterProject/Pods-HDRouterProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C08CBFB9D72F3DF60FABA1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDRouterProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFD990DE2B849B2D0075424F /* Sources */ = {
@@ -203,7 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +334,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +355,7 @@
 		};
 		FFD990F72B849B2F0075424F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2360659F345E971EB479BE04 /* Pods-HDRouterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +383,7 @@
 		};
 		FFD990F82B849B2F0075424F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA88E8E1936C6E35E662E8D0 /* Pods-HDRouterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
